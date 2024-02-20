@@ -1,0 +1,13 @@
+<div class="card" style="width: 18rem; display: inline-block">
+  <div class="card-body">
+    <h5 class="card-title">{{ person.name }}</h5>
+    <p class="card-text">{{ person.address}}</p>
+    <ng-transclude> </ng-transclude>
+    <a
+      href="#"
+      class="btn btn-primary"
+      ng-click="alertMethod({person: person.name})"
+      >ALERT</a
+    >
+  </div>
+</div>

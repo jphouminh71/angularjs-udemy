@@ -1,0 +1,10 @@
+<h1>Search Results</h1>
+<div>
+  <input type="text" ng-model="nameServiceName" style="display: block" />
+  <label style="display: block"> Searching for: {{ nameServiceName }}</label>
+  <div ng-repeat="person in people">
+    <search-result person="person" alert-method="alertSomething(person)">
+      <span> Results may not be valid </span>
+    </search-result>
+  </div>
+</div>
